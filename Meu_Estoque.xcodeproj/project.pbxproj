@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED139070294960890077D852 /* ProductsListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED13906F294960890077D852 /* ProductsListScreen.swift */; };
+		ED1390722949609E0077D852 /* ProductsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1390712949609E0077D852 /* ProductsListView.swift */; };
+		ED139075294961450077D852 /* AddProductScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED139074294961450077D852 /* AddProductScreen.swift */; };
+		ED139077294962430077D852 /* ProductsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED139076294962430077D852 /* ProductsListViewModel.swift */; };
 		ED66DDCA2938EF5E0096640B /* Meu_EstoqueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED66DDC92938EF5E0096640B /* Meu_EstoqueApp.swift */; };
-		ED66DDCC2938EF5E0096640B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED66DDCB2938EF5E0096640B /* ContentView.swift */; };
 		ED66DDCE2938EF5F0096640B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED66DDCD2938EF5F0096640B /* Assets.xcassets */; };
 		ED66DDD12938EF5F0096640B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED66DDD02938EF5F0096640B /* Preview Assets.xcassets */; };
 		ED66DDDA2938EFBA0096640B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED66DDD92938EFBA0096640B /* Product.swift */; };
@@ -16,9 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED13906F294960890077D852 /* ProductsListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListScreen.swift; sourceTree = "<group>"; };
+		ED1390712949609E0077D852 /* ProductsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListView.swift; sourceTree = "<group>"; };
+		ED139074294961450077D852 /* AddProductScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductScreen.swift; sourceTree = "<group>"; };
+		ED139076294962430077D852 /* ProductsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewModel.swift; sourceTree = "<group>"; };
 		ED66DDC62938EF5E0096640B /* Meu_Estoque.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meu_Estoque.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED66DDC92938EF5E0096640B /* Meu_EstoqueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meu_EstoqueApp.swift; sourceTree = "<group>"; };
-		ED66DDCB2938EF5E0096640B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ED66DDCD2938EF5F0096640B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED66DDD02938EF5F0096640B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ED66DDD92938EFBA0096640B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -36,6 +42,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED13906829495FD30077D852 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		ED13906929495FDA0077D852 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ED139076294962430077D852 /* ProductsListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ED13906A29495FF10077D852 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ED13906B2949600E0077D852 /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Loaders;
+			sourceTree = "<group>";
+		};
+		ED13906C2949601D0077D852 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		ED13906D294960290077D852 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ED13906E294960490077D852 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				ED13906F294960890077D852 /* ProductsListScreen.swift */,
+				ED139074294961450077D852 /* AddProductScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		ED66DDBD2938EF5E0096640B = {
 			isa = PBXGroup;
 			children = (
@@ -56,7 +114,14 @@
 			isa = PBXGroup;
 			children = (
 				ED66DDC92938EF5E0096640B /* Meu_EstoqueApp.swift */,
+				ED13906829495FD30077D852 /* Utils */,
+				ED13906929495FDA0077D852 /* ViewModels */,
 				ED66DDD82938EFAB0096640B /* Models */,
+				ED13906A29495FF10077D852 /* Services */,
+				ED13906B2949600E0077D852 /* Loaders */,
+				ED13906C2949601D0077D852 /* Control */,
+				ED13906D294960290077D852 /* Extensions */,
+				ED13906E294960490077D852 /* Screens */,
 				ED66DDD72938EFA50096640B /* Views */,
 				ED66DDCD2938EF5F0096640B /* Assets.xcassets */,
 				ED66DDCF2938EF5F0096640B /* Preview Content */,
@@ -75,8 +140,8 @@
 		ED66DDD72938EFA50096640B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				ED66DDCB2938EF5E0096640B /* ContentView.swift */,
 				ED66DDDB2938F1680096640B /* ProductCell.swift */,
+				ED1390712949609E0077D852 /* ProductsListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -159,10 +224,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED66DDCC2938EF5E0096640B /* ContentView.swift in Sources */,
 				ED66DDDC2938F1680096640B /* ProductCell.swift in Sources */,
+				ED139075294961450077D852 /* AddProductScreen.swift in Sources */,
+				ED1390722949609E0077D852 /* ProductsListView.swift in Sources */,
 				ED66DDCA2938EF5E0096640B /* Meu_EstoqueApp.swift in Sources */,
 				ED66DDDA2938EFBA0096640B /* Product.swift in Sources */,
+				ED139070294960890077D852 /* ProductsListScreen.swift in Sources */,
+				ED139077294962430077D852 /* ProductsListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
